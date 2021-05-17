@@ -1,7 +1,7 @@
 Prueba Técnica OLSoftware
 
 CREDENCIALES DEL LOGIN => user: 1010109872, password: 9876,
-En la carpeta del proyecto "reactapp/src/Assets/" hay un archivo json del cual se obtiene la información desplegada, la lista de usuarios tienen un "id" que sirve de contraseña y un "pass" que es la contraseña, cualquiera debería funcionar para ingresar.
+En la carpeta del proyecto "reactapp/src/Assets/" hay un archivo json del cual se obtiene la información desplegada, la lista de usuarios tienen un "id" que sirve de usuario y un "pass" que es la contraseña, cualquiera debería funcionar para ingresar.
 
 Al ser una aplicación React, es necesario tener instalado Node.js en el equipo para poder ejecutarla (lo puedes encontrar aquí: https://nodejs.org/en/ es preferible descargar la versión LTS).
 Una vez descargado el proyecto, navega hasta el directorio "reactapp" del proyecto desde una terminal (ej. CMD de windows).
