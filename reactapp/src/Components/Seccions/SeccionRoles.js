@@ -229,8 +229,9 @@ const SeccionRoles = (props) => {
         disableEscapeKeyDown
         open={diag === "add" || diag === "edit"}
         maxWidth={false}
+        PaperProps={{ style: { borderRadius: "30px" } }}
       >
-        <DialogTitle>
+        <DialogTitle style={{ textAlign: "start" }}>
           {diag === "add" ? "Agregar nuevo usuario" : "Editar usuario"}
         </DialogTitle>
         <div className="o-roles-diag"></div>
@@ -396,6 +397,7 @@ const SeccionRoles = (props) => {
         disableEscapeKeyDown
         open={diag === "del"}
         maxWidth={false}
+        PaperProps={{ style: { borderRadius: "30px" } }}
       >
         <DialogTitle style={{ textAlign: "center" }}>
           {"¿Desea eliminar el usuario?"}
