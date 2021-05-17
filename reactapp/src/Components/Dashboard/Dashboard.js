@@ -78,6 +78,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
+    overflowX: "hidden",
   },
   drawerClose: {
     transition: theme.transitions.create("width", {
@@ -87,7 +88,20 @@ const useStyles = makeStyles((theme) => ({
     overflowX: "hidden",
     width: drawerWidthClose,
   },
+  mainContent: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    height: "calc(100vh - 90px)",
+    backgroundColor: "#F2F2F2",
+    marginLeft: drawerWidthClose,
+    width: "calc(100vw - " + drawerWidthClose + ")",
+  },
   mainContentOpen: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    height: "35px",
     marginLeft: drawerWidth,
     width: "calc(100vw - " + drawerWidth + ")",
     transition: theme.transitions.create(["margin-left", "width"], {
@@ -96,6 +110,10 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
   mainContentClose: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    height: "35px",
     marginLeft: drawerWidthClose,
     width: "calc(100vw - " + drawerWidthClose + ")",
     transition: theme.transitions.create(["margin-left", "width"], {
@@ -110,7 +128,6 @@ const Dashboard = () => {
   const [open, setOpen] = useState(false);
 
   const handleDrawer = () => {
-    console.log("click!");
     setOpen((prevOpen) => !prevOpen);
   };
 
@@ -139,6 +156,7 @@ const Dashboard = () => {
           <Link
             to="/dashboard"
             style={{ textDecoration: "none", color: "#fff" }}
+            onClick={() => setOpen(false)}
           >
             <ListItem button key={"Main"}>
               <ListItemIcon>
@@ -160,6 +178,7 @@ const Dashboard = () => {
                 to={x.url}
                 className="o-dashboard-option-btn o-dashboard-option-btn-inactive"
                 activeClassName="o-dashboard-option-btn o-dashboard-option-btn-active"
+                onClick={() => setOpen(false)}
               >
                 <SideButton style={{ paddingLeft: "10px" }}>
                   <ListItemIcon style={{ color: "#fff" }}>{x.obj}</ListItemIcon>
@@ -188,19 +207,8 @@ const Dashboard = () => {
         </IconButton>
         <AppBar />
       </div>
-      <div
-        className={clsx({
-          [classes.mainContentOpen]: open,
-          [classes.mainContentClose]: !open,
-        })}
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "flex-start",
-          height: "calc(100vh - 90px)",
-          backgroundColor: "#F2F2F2",
-        }}
-      >
+
+      <div className={classes.mainContent} onClick={() => setOpen(false)}>
         <Switch>
           <Route exact path="/dashboard">
             <div className="o-dashboard-option-placeholder">
@@ -219,17 +227,12 @@ const Dashboard = () => {
           ))}
         </Switch>
       </div>
+
       <div
         className={clsx({
           [classes.mainContentOpen]: open,
           [classes.mainContentClose]: !open,
         })}
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "flex-start",
-          height: "35px",
-        }}
       >
         <Footer />
       </div>

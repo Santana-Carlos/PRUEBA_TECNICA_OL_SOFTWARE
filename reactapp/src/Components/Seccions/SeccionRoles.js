@@ -26,7 +26,7 @@ import {
   GreenButton,
   RedButton,
 } from "../../Components/StyledComponents";
-import { useHandleChange } from "../../Hooks/HandleChange";
+import TablaRolesFiltro from "./TablaRolesFiltro";
 import data from "../../Assets/data.json";
 import "./Seccion.css";
 
@@ -223,6 +223,8 @@ const SeccionRoles = (props) => {
           onChangeRowsPerPage={handleChangeRowsPerPage}
         />
       </div>
+
+      <TablaRolesFiltro />
 
       <Dialog
         disableBackdropClick
