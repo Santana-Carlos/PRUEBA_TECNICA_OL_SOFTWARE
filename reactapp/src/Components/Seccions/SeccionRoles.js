@@ -231,7 +231,7 @@ const SeccionRoles = (props) => {
         maxWidth={false}
       >
         <DialogTitle>
-          <h2>Usuario</h2>
+          {diag === "add" ? "Agregar nuevo usuario" : "Editar usuario"}
         </DialogTitle>
         <div className="o-roles-diag"></div>
         <DialogContent>
