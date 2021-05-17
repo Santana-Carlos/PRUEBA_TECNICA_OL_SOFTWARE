@@ -231,7 +231,7 @@ const SeccionRoles = (props) => {
         maxWidth={false}
         PaperProps={{ style: { borderRadius: "30px" } }}
       >
-        <DialogTitle style={{ textAlign: "start" }}>
+        <DialogTitle style={{ textAlign: "start", paddingLeft: "2rem" }}>
           {diag === "add" ? "Agregar nuevo usuario" : "Editar usuario"}
         </DialogTitle>
         <div className="o-roles-diag"></div>
