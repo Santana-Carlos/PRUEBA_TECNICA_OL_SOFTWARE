@@ -23,13 +23,16 @@ const LoginForm = () => {
   const [diag, setDiag] = useState(false);
 
   const logIn = () => {
-    const auth = data.auth;
+    const auth = data.users_data;
+    console.log(auth);
     const check = auth.some(
-      (x) => x.user === user.value && x.pass === pass.value
+      (x) => x.id === user.value && x.pass === pass.value
     );
 
     if (check) {
       setLoading(true);
+
+      //simulacion del tiempo de respuesta del API
       setTimeout(() => {
         window.location.assign("/dashboard");
       }, 1500);

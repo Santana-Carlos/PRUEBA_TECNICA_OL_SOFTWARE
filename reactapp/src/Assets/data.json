@@ -21,7 +21,8 @@
   ],
   "users_data": [
     {
-      "id": 114485404,
+      "id": "114485404",
+      "pass": "1234",
       "nombres": "Andrés Felipe",
       "apellidos": "Garcia Castro",
       "rol": "Administrador",
@@ -30,7 +31,8 @@
       "estado": true
     },
     {
-      "id": 665789080,
+      "id": "665789080",
+      "pass": "1234",
       "nombres": "Elizabeth",
       "apellidos": "Arboleda",
       "rol": "Administrador",
@@ -39,7 +41,8 @@
       "estado": false
     },
     {
-      "id": 665789043,
+      "id": "665789043",
+      "pass": "1234",
       "nombres": "Jader",
       "apellidos": "Penagos",
       "rol": "Conductor",
@@ -48,7 +51,8 @@
       "estado": true
     },
     {
-      "id": 1122567890,
+      "id": "1122567890",
+      "pass": "1234",
       "nombres": "Diana",
       "apellidos": "Villa",
       "rol": "Recolector",
@@ -57,7 +61,8 @@
       "estado": true
     },
     {
-      "id": 1144198789,
+      "id": "1144198789",
+      "pass": "1234",
       "nombres": "Luis Andrés",
       "apellidos": "Murillo",
       "rol": "Administrador",
@@ -66,7 +71,8 @@
       "estado": true
     },
     {
-      "id": 44789056,
+      "id": "44789056",
+      "pass": "1234",
       "nombres": "Jairo",
       "apellidos": "Gutierrez",
       "rol": "Coordinador",
@@ -75,7 +81,8 @@
       "estado": true
     },
     {
-      "id": 1144198786,
+      "id": "1144198786",
+      "pass": "1234",
       "nombres": "Alexandra",
       "apellidos": "Culcha",
       "rol": "Digitador CG-UNO",
@@ -84,7 +91,8 @@
       "estado": false
     },
     {
-      "id": 72567788,
+      "id": "72567788",
+      "pass": "1234",
       "nombres": "Valentina",
       "apellidos": "Zapata",
       "rol": "Recolector",
@@ -93,7 +101,8 @@
       "estado": true
     },
     {
-      "id": 126459785,
+      "id": "126459785",
+      "pass": "1234",
       "nombres": "Pedro",
       "apellidos": "Perez",
       "rol": "Administrador",
@@ -102,7 +111,8 @@
       "estado": true
     },
     {
-      "id": 120326548,
+      "id": "120326548",
+      "pass": "1234",
       "nombres": "Marta Lucia",
       "apellidos": "Velazques",
       "rol": "Recolector",
@@ -111,7 +121,8 @@
       "estado": false
     },
     {
-      "id": 102326586,
+      "id": "102326586",
+      "pass": "1234",
       "nombres": "Camilo Andrés",
       "apellidos": "Ortega Velez",
       "rol": "Conductor",
@@ -120,7 +131,8 @@
       "estado": true
     },
     {
-      "id": 1010265984,
+      "id": "1010265984",
+      "pass": "1234",
       "nombres": "Daniel",
       "apellidos": "Londoñes",
       "rol": "Coordinador",
@@ -129,7 +141,8 @@
       "estado": true
     },
     {
-      "id": 1495623154,
+      "id": "1495623154",
+      "pass": "1234",
       "nombres": "Marta",
       "apellidos": "Manrrique",
       "rol": "Coordinador",
@@ -138,7 +151,8 @@
       "estado": true
     },
     {
-      "id": 123654895,
+      "id": "123654895",
+      "pass": "1234",
       "nombres": "Juan Pablo",
       "apellidos": "Ortiz",
       "rol": "Administrador",
@@ -147,7 +161,8 @@
       "estado": true
     },
     {
-      "id": 159874526,
+      "id": "159874526",
+      "pass": "1234",
       "nombres": "Juan Jose",
       "apellidos": "Martines",
       "rol": "Digitador CG-UNO",
@@ -156,12 +171,23 @@
       "estado": true
     },
     {
-      "id": 4526195,
+      "id": "4526195",
+      "pass": "1234",
       "nombres": "Valentina",
       "apellidos": "Ortega Nuñez",
       "rol": "Conductor",
       "telefono": 3162512485,
       "correo": "vortega@refinal.com",
+      "estado": false
+    },
+    {
+      "id": "1010109872",
+      "pass": "9876",
+      "nombres": "Diego Andrés",
+      "apellidos": "Colmenares",
+      "rol": "Conductor",
+      "telefono": 31081062798,
+      "correo": "diegocol@mail.com",
       "estado": false
     }
   ]

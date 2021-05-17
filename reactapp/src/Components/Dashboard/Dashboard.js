@@ -11,6 +11,7 @@ import {
   Divider,
   ListItem,
 } from "@material-ui/core";
+import { SideButton } from "../StyledComponents";
 import {
   Menu as MenuIcon,
   Assignment as AssigmentIcon,
@@ -24,11 +25,10 @@ import OLLogo from "../../Assets/OLS.png";
 import AppBar from "./AppBar";
 import SeccionRoles from "../Seccions/SeccionRoles";
 import Footer from "./Footer";
-import data from "../../Assets/data.json";
 import "./Dashboard.css";
 
-const drawerWidth = "265px";
-const drawerWidthClose = "65px";
+const drawerWidth = "290px";
+const drawerWidthClose = "76px";
 const options = [
   {
     palabra: "Programación",
@@ -107,7 +107,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Dashboard = () => {
   const classes = useStyles();
-  const [users, setUsers] = useState(data.users_data);
   const [open, setOpen] = useState(false);
 
   const handleDrawer = () => {
@@ -156,17 +155,18 @@ const Dashboard = () => {
         <Divider style={{ background: "#fff" }} variant="middle" />
         <List>
           {options.map((x, i) => (
-            <NavLink
-              to={x.url}
-              key={i}
-              className="o-dashboard-nav"
-              activeClassName="o-dashboard-navactive"
-            >
-              <ListItem button>
-                <ListItemIcon style={{ color: "#fff" }}>{x.obj}</ListItemIcon>
-                <ListItemText primary={x.palabra} />
-              </ListItem>
-            </NavLink>
+            <ListItem key={i}>
+              <NavLink
+                to={x.url}
+                className="o-dashboard-option-btn o-dashboard-option-btn-inactive"
+                activeClassName="o-dashboard-option-btn o-dashboard-option-btn-active"
+              >
+                <SideButton style={{ paddingLeft: "10px" }}>
+                  <ListItemIcon style={{ color: "#fff" }}>{x.obj}</ListItemIcon>
+                  <ListItemText primary={x.palabra} />
+                </SideButton>
+              </NavLink>
+            </ListItem>
           ))}
         </List>
       </Drawer>

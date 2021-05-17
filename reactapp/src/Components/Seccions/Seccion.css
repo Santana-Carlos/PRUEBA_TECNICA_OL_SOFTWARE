@@ -1,0 +1,100 @@
+h2 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.o-roles-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.o-roles-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - 90px);
+  width: 100%;
+  margin: 2rem;
+}
+
+.o-roles-table-bigcontainer {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 90px);
+  width: 70%;
+  padding: 2.5rem;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.o-roles-table-container {
+  display: flex;
+  width: 100%;
+}
+
+.o-roles-table-titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 4rem;
+  color: #3f51b5;
+}
+
+.o-roles-table-btnicon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.o-roles-btn-add {
+  width: 7rem;
+  height: 2.5rem;
+}
+
+.o-roles-btn-diag {
+  width: 7rem;
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+.o-roles-boxspacing {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.o-roles-contentform-big {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+  height: 83%;
+  overflow: hidden;
+}
+
+.o-roles-contentform {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  margin: 0;
+  width: 37%;
+}
+
+.o-roles-label {
+  font-size: large;
+  font-weight: 400;
+}
+
+.o-roles-diag {
+  width: 50rem;
+}
+
+.o-space {
+  width: 100%;
+}

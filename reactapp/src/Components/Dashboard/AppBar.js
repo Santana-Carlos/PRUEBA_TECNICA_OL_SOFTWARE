@@ -7,12 +7,15 @@ import "./Dashboard.css";
 import "../../Styles/LoadingDotPulse.css";
 
 const AppBar = (props) => {
-  const userName = data.auth[1].nombres + " " + data.auth[1].apellidos;
+  const userName =
+    data.users_data[0].nombres + " " + data.users_data[0].apellidos;
   const [loading, setLoading] = useState(false);
 
   const LogOut = () => {
     console.log("Click!");
     setLoading(true);
+
+    //simulacion del tiempo de respuesta del API
     setTimeout(() => {
       window.location.assign("/");
     }, 1000);
