@@ -1,0 +1,168 @@
+{
+  "auth": [
+    {
+      "user": "user01",
+      "pass": "1234",
+      "nombres": "Diego Andrés",
+      "apellidos": "Colmenares"
+    },
+    {
+      "user": "user02",
+      "pass": "9876",
+      "nombres": "Andrés Felipe",
+      "apellidos": "García Castro"
+    },
+    {
+      "user": "admin01",
+      "pass": "adminpass",
+      "nombres": "María Fernanda",
+      "apellidos": "Perez Ortiz"
+    }
+  ],
+  "users_data": [
+    {
+      "id": 114485404,
+      "nombres": "Andrés Felipe",
+      "apellidos": "Garcia Castro",
+      "rol": "Administrador",
+      "telefono": 3165303978,
+      "correo": "afgarcia@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 665789080,
+      "nombres": "Elizabeth",
+      "apellidos": "Arboleda",
+      "rol": "Administrador",
+      "telefono": 3165303978,
+      "correo": "earboleda@refinal.com",
+      "estado": false
+    },
+    {
+      "id": 665789043,
+      "nombres": "Jader",
+      "apellidos": "Penagos",
+      "rol": "Conductor",
+      "telefono": 3175303978,
+      "correo": "jpenagos@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 1122567890,
+      "nombres": "Diana",
+      "apellidos": "Villa",
+      "rol": "Recolector",
+      "telefono": 3005303976,
+      "correo": "dvilla@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 1144198789,
+      "nombres": "Luis Andrés",
+      "apellidos": "Murillo",
+      "rol": "Administrador",
+      "telefono": 3115134078,
+      "correo": "lamurillo@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 44789056,
+      "nombres": "Jairo",
+      "apellidos": "Gutierrez",
+      "rol": "Coordinador",
+      "telefono": 3125333977,
+      "correo": "jgutierrez@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 1144198786,
+      "nombres": "Alexandra",
+      "apellidos": "Culcha",
+      "rol": "Digitador CG-UNO",
+      "telefono": 3145439560,
+      "correo": "aculcha@refinal.com",
+      "estado": false
+    },
+    {
+      "id": 72567788,
+      "nombres": "Valentina",
+      "apellidos": "Zapata",
+      "rol": "Recolector",
+      "telefono": 3157893970,
+      "correo": "vzapata@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 126459785,
+      "nombres": "Pedro",
+      "apellidos": "Perez",
+      "rol": "Administrador",
+      "telefono": 3106295425,
+      "correo": "pperz@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 120326548,
+      "nombres": "Marta Lucia",
+      "apellidos": "Velazques",
+      "rol": "Recolector",
+      "telefono": 3032659485,
+      "correo": "mvelazques@refinal.com",
+      "estado": false
+    },
+    {
+      "id": 102326586,
+      "nombres": "Camilo Andrés",
+      "apellidos": "Ortega Velez",
+      "rol": "Conductor",
+      "telefono": 3126598458,
+      "correo": "cortega@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 1010265984,
+      "nombres": "Daniel",
+      "apellidos": "Londoñes",
+      "rol": "Coordinador",
+      "telefono": 3102659426,
+      "correo": "dlondones@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 1495623154,
+      "nombres": "Marta",
+      "apellidos": "Manrrique",
+      "rol": "Coordinador",
+      "telefono": 3112536159,
+      "correo": "mmanrrique@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 123654895,
+      "nombres": "Juan Pablo",
+      "apellidos": "Ortiz",
+      "rol": "Administrador",
+      "telefono": 3152365492,
+      "correo": "jortiz@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 159874526,
+      "nombres": "Juan Jose",
+      "apellidos": "Martines",
+      "rol": "Digitador CG-UNO",
+      "telefono": 162548215,
+      "correo": "jmartines@refinal.com",
+      "estado": true
+    },
+    {
+      "id": 4526195,
+      "nombres": "Valentina",
+      "apellidos": "Ortega Nuñez",
+      "rol": "Conductor",
+      "telefono": 3162512485,
+      "correo": "vortega@refinal.com",
+      "estado": false
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/**
+ *
+ * three-dots.css v0.1.0
+ *
+ * https://nzbin.github.io/three-dots/
+ *
+ * Copyright (c) 2018 nzbin
+ *
+ * Released under the MIT license
+ *
+ */
+
+/**
+ * ==============================================
+ * Custom Color / Sizing by Diego Colmenares
+ * ==============================================
+ */
+:root {
+  --dotColor: #fff;
+  --dotSize: 30px; /* full size = dotSize */
+  --dotIncrese: 30px; /* initial size = dotSize - dotIncrese*/
+  --dotDistance: 40px; /* distance between dots centers */
+  --pulseDuration: 1.5s;
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+/**
+ * ==============================================
+ * Dot Pulse Loading Animation
+ * ==============================================
+ */
+
+.dot-pulse {
+  position: relative;
+  left: -9999px;
+  width: var(--dotSize);
+  height: var(--dotSize);
+  border-radius: calc(var(--dotSize) / 2);
+  background-color: var(--dotColor);
+  color: var(--dotColor);
+  box-shadow: 9999px 0 0 calc(var(--dotIncrese) / -2) var(--dotColor);
+  animation: dotPulse var(--pulseDuration) infinite linear;
+  animation-delay: 0.25s;
+}
+
+.dot-pulse::before,
+.dot-pulse::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: var(--dotSize);
+  height: var(--dotSize);
+  border-radius: calc(var(--dotSize) / 2);
+  background-color: var(--dotColor);
+  color: var(--dotColor);
+}
+
+.dot-pulse::before {
+  box-shadow: calc(9999px - var(--dotDistance) * 1.6) 0 0
+    calc(var(--dotIncrese) / -2) var(--dotColor);
+  animation: dotPulseBefore var(--pulseDuration) infinite linear;
+  animation-delay: 0s;
+}
+
+.dot-pulse::after {
+  box-shadow: calc(9999px + var(--dotDistance)) 0 0 calc(var(--dotIncrese) / -2)
+    var(--dotColor);
+  animation: dotPulseAfter var(--pulseDuration) infinite linear;
+  animation-delay: 0.5s;
+}
+
+@keyframes dotPulseBefore {
+  0% {
+    box-shadow: calc(9999px - var(--dotDistance) * 1.6) 0 0
+      calc(var(--dotIncrese) / -2) var(--dotColor);
+  }
+  30% {
+    box-shadow: calc(9999px - var(--dotDistance) * 1.6) 0 0 0 var(--dotColor);
+  }
+  60%,
+  100% {
+    box-shadow: calc(9999px - var(--dotDistance) * 1.6) 0 0
+      calc(var(--dotIncrese) / -2) var(--dotColor);
+  }
+}
+
+@keyframes dotPulse {
+  0% {
+    box-shadow: 9999px 0 0 calc(var(--dotIncrese) / -2) var(--dotColor);
+  }
+  30% {
+    box-shadow: 9999px 0 0 0 var(--dotColor);
+  }
+  60%,
+  100% {
+    box-shadow: 9999px 0 0 calc(var(--dotIncrese) / -2) var(--dotColor);
+  }
+}
+
+@keyframes dotPulseAfter {
+  0% {
+    box-shadow: calc(9999px + var(--dotDistance)) 0 0
+      calc(var(--dotIncrese) / -2) var(--dotColor);
+  }
+  30% {
+    box-shadow: calc(9999px + var(--dotDistance)) 0 0 0 var(--dotColor);
+  }
+  60%,
+  100% {
+    box-shadow: calc(9999px + var(--dotDistance)) 0 0
+      calc(var(--dotIncrese) / -2) var(--dotColor);
+  }
+}
