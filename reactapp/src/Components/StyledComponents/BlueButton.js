@@ -15,6 +15,7 @@ const BlueButton = withStyles((theme) => ({
     borderRadius: "5px",
     background: "linear-gradient(45deg, #42ACF0, #193AC2)",
     "&:hover": {
+      transitionDuration: "background 2s ease",
       background: "linear-gradient(45deg, #6784FF, #142D97)",
     },
   },

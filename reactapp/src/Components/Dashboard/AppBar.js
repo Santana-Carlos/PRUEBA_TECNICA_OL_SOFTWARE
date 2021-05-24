@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Backdrop, IconButton } from "@material-ui/core";
 import { ExitToApp as ExitIcon } from "@material-ui/icons";
 import UserImg from "../../Assets/user.png";
@@ -7,8 +7,7 @@ import "./Dashboard.css";
 import "../../Styles/LoadingDotPulse.css";
 
 const AppBar = (props) => {
-  const userName =
-    data.users_data[0].nombres + " " + data.users_data[0].apellidos;
+  const [userName, setUserName] = useState("");
   const [loading, setLoading] = useState(false);
 
   const LogOut = () => {
@@ -20,6 +19,13 @@ const AppBar = (props) => {
       window.location.assign("/");
     }, 1000);
   };
+
+  useEffect(() => {
+    setUserName(
+      data.users_data[0].nombres + " " + data.users_data[0].apellidos
+    );
+  }, []);
+
   return (
     <div className="o-appbar-container">
       <h2> Prueba Front-end </h2>

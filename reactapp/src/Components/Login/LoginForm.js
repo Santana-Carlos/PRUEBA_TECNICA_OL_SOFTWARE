@@ -22,9 +22,10 @@ const LoginForm = () => {
   const [loading, setLoading] = useState(false);
   const [diag, setDiag] = useState(false);
 
-  const logIn = () => {
+  const logIn = (e) => {
+    e.preventDefault();
     const auth = data.users_data;
-    console.log(auth);
+    //console.log(auth);
     const check = auth.some(
       (x) => x.id === user.value && x.pass === pass.value
     );
@@ -41,32 +42,31 @@ const LoginForm = () => {
 
   return (
     <div className="o-login-container">
-      <h1> Inicio de sesión </h1>
-      <div style={{ margin: "3rem 0" }}>
-        <div className="o-form-log o-form-log-user">
-          <input placeholder="Usuario" className="o-input-log" {...user} />
-          <IconUser className="o-fullcenter" />
+      <form onSubmit={logIn}>
+        <h1> Inicio de sesión </h1>
+        <div style={{ margin: "3rem 0" }}>
+          <div className="o-form-log o-form-log-user">
+            <input placeholder="Usuario" className="o-input-log" {...user} />
+            <IconUser className="o-fullcenter" />
+          </div>
+          <div className="o-form-log">
+            <input
+              type="password"
+              placeholder="Contraseña"
+              className="o-input-log"
+              {...pass}
+            />
+            <IconPass className="o-fullcenter" />
+          </div>
         </div>
-        <div className="o-form-log">
-          <input
-            type="password"
-            placeholder="Contraseña"
-            className="o-input-log"
-            {...pass}
-          />
-          <IconPass className="o-fullcenter" />
+        <div className="o-button-log">
+          <BlueButton type="submit">Iniciar sesión</BlueButton>
         </div>
-      </div>
-      <div className="o-button-log">
-        <BlueButton type="submit" onClick={logIn}>
-          Iniciar sesión
-        </BlueButton>
-      </div>
+      </form>
 
       <Dialog
-        disableBackdropClick
-        disableEscapeKeyDown
         open={diag}
+        onClose={() => setDiag(false)}
         PaperProps={{ style: { borderRadius: "30px" } }}
       >
         <DialogTitle style={{ textAlign: "center", paddingBottom: "2rem" }}>

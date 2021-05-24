@@ -21,7 +21,7 @@ import {
   AccessibilityNew as AccessibilityIcon,
   Book as BookIcon,
 } from "@material-ui/icons";
-import OLLogo from "../../Assets/OLS.png";
+import Logo from "../../Assets/FISA_logo.png";
 import AppBar from "./AppBar";
 import SeccionRoles from "../Seccions/SeccionRoles";
 import Footer from "./Footer";
@@ -160,13 +160,9 @@ const Dashboard = () => {
           >
             <ListItem button key={"Main"}>
               <ListItemIcon>
-                <img
-                  src={OLLogo}
-                  alt="OL logo"
-                  className="o-dashboard-logoimg"
-                />
+                <img src={Logo} alt="logo" className="o-dashboard-logoimg" />
               </ListItemIcon>
-              <ListItemText primary={"OLSoftware"} />
+              <ListItemText primary={"App prueba"} />
             </ListItem>
           </Link>
         </List>

@@ -21,6 +21,16 @@
   ],
   "users_data": [
     {
+      "id": "1010109872",
+      "pass": "9876",
+      "nombres": "Diego Andrés",
+      "apellidos": "Colmenares Machado",
+      "rol": "Conductor",
+      "telefono": 31081062798,
+      "correo": "diegocol@mail.com",
+      "estado": false
+    },
+    {
       "id": "114485404",
       "pass": "1234",
       "nombres": "Andrés Felipe",
@@ -178,16 +188,6 @@
       "rol": "Conductor",
       "telefono": 3162512485,
       "correo": "vortega@refinal.com",
-      "estado": false
-    },
-    {
-      "id": "1010109872",
-      "pass": "9876",
-      "nombres": "Diego Andrés",
-      "apellidos": "Colmenares",
-      "rol": "Conductor",
-      "telefono": 31081062798,
-      "correo": "diegocol@mail.com",
       "estado": false
     }
   ]

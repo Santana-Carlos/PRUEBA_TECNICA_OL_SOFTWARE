@@ -218,6 +218,7 @@ const SeccionRoles = (props) => {
           component="div"
           count={users.length}
           rowsPerPage={rowsPerPage}
+          labelRowsPerPage="Filas por página: "
           page={page}
           onChangePage={handleChangePage}
           onChangeRowsPerPage={handleChangeRowsPerPage}
@@ -282,11 +283,10 @@ const SeccionRoles = (props) => {
                     estado: e.target.value,
                   }))
                 }
-                className="o-space"
                 style={{ marginTop: "8px" }}
                 variant="outlined"
                 margin="dense"
-                className="o-roles-boxspacing"
+                className="o-space o-roles-boxspacing"
               >
                 <MenuItem value={true}>Activo</MenuItem>
                 <MenuItem value={false}>Inactivo</MenuItem>
