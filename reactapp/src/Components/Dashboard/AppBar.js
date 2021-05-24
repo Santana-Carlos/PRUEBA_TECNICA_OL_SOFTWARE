@@ -28,7 +28,7 @@ const AppBar = (props) => {
 
   return (
     <div className="o-appbar-container">
-      <h2> Prueba Front-end </h2>
+      <h2 style={{ marginLeft: "2rem" }}> Prueba Front-end </h2>
       <div className="o-appbar-useroptions">
         <div className="o-appbar-useroptions">
           <img
